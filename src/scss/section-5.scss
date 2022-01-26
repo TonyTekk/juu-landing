@@ -3,7 +3,8 @@
   div {
     max-width: 550px;
     margin-top: 126px;
-    margin-left: auto;
+    //margin-left: auto;
+    margin-left: 340px;
     margin-right: 80px;
   }
 
@@ -12,9 +13,10 @@
   }
 
   img {
-    width: 670px;
+    width: 1000px;
     position: absolute;
     left: 40px;
+    top: -80px;
     animation:spin 400s linear infinite;
   }
 }
