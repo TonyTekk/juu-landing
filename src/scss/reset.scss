@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li, ul li {
+  margin:0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
+input, button {
+  border: none;
+  background: transparent;
+  outline: none;
+
+  &:hover {
+    outline: none;
+    background: transparent;
+  }
+
+  &:focus {
+    outline: none;
+    background: transparent;
+  }
+
+  &:active {
+    outline: none;
+    background: transparent;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+iframe {
+  border: 0;
+}
