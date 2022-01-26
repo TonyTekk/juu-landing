@@ -8,6 +8,8 @@
 // Components
 @import "header";
 @import "footer";
+@import "section-1";
+@import "section-5";
 
 body {
   background: url(../../src/static/background.jpg) no-repeat center center fixed;
@@ -58,22 +60,6 @@ p {
   font-family: Montreal-Book, serif;
 }
 
-.section1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  p {
-    max-width: 945px;
-    text-align: center;
-  }
-
-  img {
-    width: 690px;
-    position: absolute;
-  }
-}
-
 .section3 {
 
   div {
@@ -88,11 +74,13 @@ p {
 }
 
 .section4 {
+  display: flex;
 
   div {
     max-width: 550px;
     margin-top: 126px;
-    margin-left: 40%;
+    margin-left: auto;
+    margin-right: 80px;
   }
 
   p {
@@ -102,30 +90,8 @@ p {
   img {
     width: 280px;
     position: absolute;
-    left: 100px;
+    left: 200px;
+    transform: rotate(20deg);
+
   }
 }
-
-.section5 {
-
-  div {
-    max-width: 550px;
-    margin-top: 126px;
-    margin-left: 60%;
-  }
-
-  p {
-    margin-bottom: 20px;
-  }
-
-  img {
-    width: 690px;
-    position: absolute;
-    left: 100px;
-  }
-}
-
-//------
-
-
-

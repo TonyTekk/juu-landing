@@ -1,0 +1,27 @@
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    max-width: 945px;
+    text-align: center;
+    animation: fadeInFast 1s;
+  }
+
+  img {
+    width: 690px;
+    position: absolute;
+    animation: fadeInSlow 10s;
+  }
+}
+
+@keyframes fadeInSlow {
+  0% {opacity:0.3;}
+  100% {opacity:1;}
+}
+
+@keyframes fadeInSlow {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
