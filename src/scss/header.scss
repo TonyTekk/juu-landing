@@ -10,6 +10,9 @@ header {
   justify-content: space-between;
   border-bottom: solid 1px #E0E0E0;
   font-family: Condensed-Regular, serif;
+  transition: all $a-time;
+  animation: fadeUp 1s;
+  z-index: 100;
 
   nav {
     display: flex;
@@ -43,5 +46,15 @@ header {
     border-radius: 3px;
     font-size: 13px;
     padding: 7px 9px;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    top: -80px;
+  }
+
+  100% {
+    top: 0;
   }
 }

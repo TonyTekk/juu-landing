@@ -9,6 +9,8 @@
 @import "header";
 @import "footer";
 @import "section-1";
+@import "section-2";
+@import "section-3";
 @import "section-4";
 @import "section-5";
 @import "section-6";
@@ -75,21 +77,3 @@ p {
   line-height: 24px;
   font-family: Montreal-Book, serif;
 }
-
-.__fade {
-  opacity: 1;
-}
-
-.section3 {
-
-  div {
-    max-width: 550px;
-    margin-top: 86px;
-    margin-left: 50%;
-  }
-
-  p {
-    margin-bottom: 20px;
-  }
-}
-
