@@ -6,6 +6,11 @@
     //margin-top: 80px;
     margin-right: 80px;
     margin-left: auto;
+    padding: 0 10px;
+
+    @include media-breakpoint-down(lg) {
+      margin: 0;
+    }
   }
 
   p {
@@ -15,6 +20,10 @@
   .__vectors {
     position: absolute;
     top: 10px;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
 
     img {
       position : absolute;

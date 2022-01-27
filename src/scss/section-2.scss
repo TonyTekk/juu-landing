@@ -37,6 +37,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
   }
 
   .logo {
@@ -44,5 +49,9 @@
     border-radius: 15px;
     padding: 27px 13px;
     margin: 80px;
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
   }
 }

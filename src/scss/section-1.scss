@@ -5,15 +5,24 @@
 
   width: 100%;
   height: 100%;
+  overflow: hidden;
 
   p {
     max-width: 945px;
     text-align: center;
     animation: fadeInFast 1s;
+    font-size: 19px;
+    line-height: 24px;
+    padding: 0 10px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 12px;
+      line-height: 17px;
+    }
   }
 
   img {
-    width: 690px;
+    max-width: 690px;
     position: absolute;
     animation: fadeInSlow 5s;
   }

@@ -3,11 +3,21 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 300px;
+  padding-top: 250px;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 50px;
+  }
 
   .row {
     display: flex;
     padding-bottom: 50px;
+    flex-direction: row;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      padding: 0;
+    }
   }
 
   .item {
@@ -17,6 +27,11 @@
     font-size: 13px;
     line-height: 18px;
     font-family: Condensed-Regular, serif;
+
+    @include media-breakpoint-down(lg) {
+      margin: 0;
+      padding: 0 10px 50px 10px;
+    }
   }
 
   p {
@@ -32,6 +47,10 @@
     padding: 20px 170px;
     white-space: nowrap;
     font-family: Condensed-Regular, serif;
+
+    @include media-breakpoint-down(lg) {
+      padding: 10px 80px;
+    }
   }
 
   .__button {
@@ -43,5 +62,9 @@
   img {
     margin-top: 100px;
     max-width: 920px;
+
+    @include media-breakpoint-down(lg) {
+      max-width: 320px;
+    }
   }
 }
