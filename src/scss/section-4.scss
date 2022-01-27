@@ -1,16 +1,19 @@
 .section4 {
   padding-top: 120px;
 
+  @include media-breakpoint-down(lg) {
+    display: flex;
+    justify-content: center;
+  }
+
   div {
     max-width: 550px;
-    //margin-top: 126px;
-    //margin-left: auto;
     margin-left: 50%;
-    //margin-right: 80px;
     padding: 0 10px;
 
     @include media-breakpoint-down(lg) {
       margin: 0;
+      max-width: 460px;
     }
   }
 

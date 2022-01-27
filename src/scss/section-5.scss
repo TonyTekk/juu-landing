@@ -1,9 +1,15 @@
 .section5 {
+  padding-top: 120px;
+
+  @include media-breakpoint-down(lg) {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
 
   div {
     max-width: 550px;
     margin-top: 126px;
-    //margin-left: auto;
     margin-left: 340px;
     margin-right: 80px;
 
@@ -11,6 +17,7 @@
 
     @include media-breakpoint-down(lg) {
       margin: 0;
+      max-width: 460px;
     }
   }
 
@@ -21,12 +28,14 @@
   img {
     width: 1000px;
     position: absolute;
-    left: 40px;
-    top: -80px;
+    left: 80px;
+    top: 110px;
     animation:spin 400s linear infinite;
 
     @include media-breakpoint-down(lg) {
-      display: none;
+      width: 1000px;
+      left: -180px;
+      top: 0;
     }
   }
 }

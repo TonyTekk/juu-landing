@@ -3,10 +3,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 250px;
+  padding-top: 200px;
 
   @include media-breakpoint-down(lg) {
-    padding-top: 50px;
+    padding-top: 0;
   }
 
   .row {
@@ -59,12 +59,29 @@
     justify-content: center;
   }
 
-  img {
-    margin-top: 100px;
+  .team-img {
+    margin-top: 80px;
     max-width: 920px;
 
     @include media-breakpoint-down(lg) {
       max-width: 320px;
+      margin-top: 20px;
+    }
+  }
+
+  .logo {
+    display: none;
+    margin: 40px 0 40px 0;
+    border: solid 1px #E0E0E0;
+    border-radius: 15px;
+    padding: 27px 13px;
+
+    img {
+      width: 60px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      display: block;
     }
   }
 }
