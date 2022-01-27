@@ -11,4 +11,61 @@
   p {
     margin-bottom: 20px;
   }
+
+  .__vectors {
+    position: absolute;
+    top: 10px;
+
+    img {
+      position : absolute;
+
+      opacity: 0;
+      animation-name: fadeInVS1;
+      animation-duration: 10s;
+      animation-iteration-count: 1000;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .__vector_1 {
+    animation-delay: .5s;
+  }
+
+  .__vector_2 {
+    animation-delay: 1s;
+  }
+
+  .__vector_3 {
+    animation-delay: 1.5s;
+  }
+
+  .__vector_4 {
+    animation-delay: 2s;
+  }
+
+  .__vector_5 {
+    animation-delay: 2.5s;
+  }
+
+  .__vector_6 {
+    animation-delay: 3s;
+  }
+
+  .__vector_7 {
+    animation-delay: 3.5s;
+  }
+
+  .__vector_8 {
+    animation-delay: 4s;
+  }
+
+  .__vector_9 {
+    animation-delay: 4.5s;
+  }
+}
+
+@keyframes fadeInVS1 {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }
