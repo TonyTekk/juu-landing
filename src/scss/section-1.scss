@@ -12,13 +12,13 @@
   img {
     width: 690px;
     position: absolute;
-    animation: fadeInSlow 3s;
+    animation: fadeInSlow 5s;
   }
 }
 
 @keyframes fadeInFast {
   0% {
-    opacity: 0.3;
+    opacity: 0.2;
     margin-bottom: -80px;
   }
 
