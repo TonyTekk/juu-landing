@@ -5,16 +5,15 @@ $(document).ready(function() {
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-            if( bottom_of_window > bottom_of_element - 300 ){
-                $(this).animate({'opacity': '1'}, 500);
+            if( bottom_of_window > bottom_of_element - 500 ){
+                $(this).animate({'opacity': '1'}, 300);
             }
         });
     });
 });
 
 $(document).ready(function () {
-    console.log('Start');
-/*
+
     var didScroll;
     var lastScrollTop = 0;
     var delta = 50;
@@ -46,13 +45,12 @@ $(document).ready(function () {
             if(st + $(window).height() < $(document).height()) {
                 header.css({
                     'top': '0' ,
-                //    'background-color':'rgba(0, 0, 0, 0.8)'
+                    'background-color':'rgba(0, 0, 0, 0.8)'
                 });
             }
         }
 
         lastScrollTop = st;
     }
-    */
 });
 

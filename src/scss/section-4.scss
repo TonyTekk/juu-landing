@@ -1,11 +1,12 @@
 .section4 {
-  display: flex;
+  padding-top: 120px;
 
   div {
     max-width: 550px;
-    margin-top: 126px;
-    margin-left: auto;
-    margin-right: 80px;
+    //margin-top: 126px;
+    //margin-left: auto;
+    margin-left: 50%;
+    //margin-right: 80px;
   }
 
   p {
@@ -15,7 +16,8 @@
   img {
     width: 280px;
     position: absolute;
-    left: 200px;
+    left: 150px;
+    top: 20px;
     transform: rotate(20deg);
   }
 }
