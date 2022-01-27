@@ -1,0 +1,21 @@
+.section4 {
+  display: flex;
+
+  div {
+    max-width: 550px;
+    margin-top: 126px;
+    margin-left: auto;
+    margin-right: 80px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  img {
+    width: 280px;
+    position: absolute;
+    left: 200px;
+    transform: rotate(20deg);
+  }
+}
