@@ -1,3 +1,4 @@
+// Player
 $(document).ready(function() {
     var audio = document.getElementById("audio");
 
@@ -17,6 +18,7 @@ $(document).ready(function() {
 
 });
 
+// Fade in effect
 $(document).ready(function() {
     $(window).scroll( function(){
         $('.__fadeIn').each( function(i){
@@ -24,13 +26,14 @@ $(document).ready(function() {
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-            if( bottom_of_window > bottom_of_element - 500 ){
+            if( bottom_of_window > bottom_of_element - 500){
                 $(this).animate({'opacity': '1'}, 300);
             }
         });
     });
 });
 
+// Menu animation
 $(document).ready(function () {
     var didScroll;
     var lastScrollTop = 0;

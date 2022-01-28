@@ -24,7 +24,14 @@
   img {
     max-width: 690px;
     position: absolute;
+  }
+
+  .section1_img-effect1 {
     animation: fadeInSlow 5s;
+  }
+
+  .section1_img-effect2 {
+    animation: flicker 5s infinite;
   }
 }
 
@@ -43,4 +50,10 @@
 @keyframes fadeInSlow {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+@keyframes flicker {
+  0% { opacity: .4; }
+  50% { opacity: 1; }
+  100% { opacity: .4; }
 }
