@@ -7,7 +7,7 @@ header {
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   border-bottom: solid 1px #E0E0E0;
   font-family: Condensed-Regular, serif;
   transition: all $a-time;
@@ -31,15 +31,56 @@ header {
       padding-top: 3px;
       border-bottom: solid 3px #E0E0E0;
     }
+  }
 
-    @include media-breakpoint-down(lg) {
-      display: none;
-    }
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+.header-buttons {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 50px;
+  font-family: Condensed-Regular, serif;
+  animation: fadeInHeaderButton 2s;
+
+  @include media-breakpoint-down(lg) {
+    padding: 0 10px;
   }
 
   .logo {
+    display: flex;
+    align-items: center;
+
     img {
       width: 55px;
+
+      @include media-breakpoint-down(lg) {
+        width: 40px;
+      }
+    }
+
+    button {
+      padding: 15px;
+      font-size: 20px;
+      color: white;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 15px;
+        padding: 5px;
+      }
+    }
+
+    #btn_pause {
+      display: none;
     }
   }
 
@@ -50,6 +91,11 @@ header {
     border-radius: 3px;
     font-size: 13px;
     padding: 7px 9px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 9px;
+      padding: 6px 7px;
+    }
   }
 }
 
@@ -60,5 +106,15 @@ header {
 
   100% {
     top: 0;
+  }
+}
+
+@keyframes fadeInHeaderButton {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

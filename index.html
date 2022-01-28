@@ -29,15 +29,14 @@
     <meta property="og:locale" content="en_US">
 
     <!-- CSS includes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="dist/css/style.css">
 
 </head>
-<body>
-<header>
-    <div class="logo">
-        <img src="./src/static/logo.png" alt="juu.live">
-    </div>
 
+<body>
+
+<header>
     <nav>
         <a class="__active">about</a>
         <a>music marketplace</a>
@@ -45,11 +44,25 @@
         <a>blockchain ticket sales</a>
         <a>team</a>
     </nav>
+</header>
+
+<div class="header-buttons">
+    <div class="logo">
+        <img src="./src/static/logo.png" alt="juu.live">
+
+        <button id="btn_play">
+            <i class="fas fa-volume-mute"></i>
+        </button>
+
+        <button id="btn_pause">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </div>
 
     <div>
         <a class="pdf_link">download pdf</a>
     </div>
-</header>
+</div>
 
 <main>
     <section class="section1">
@@ -117,7 +130,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="sm-size">
             <div class="row">
                 <div class="item">
@@ -264,12 +277,12 @@
         </div>
     </section>
 
-    <section class="section6">
+    <section class="section6 __fadeIn">
         <div class="logo">
             <img src="./src/static/logo.png" alt="juu.live">
         </div>
 
-        <div class="__fadeIn">
+        <div>
             <div class="row">
                 <div class="item">
                     <h3>Vladimir Henri  <span>CEO</span></h3>
@@ -330,9 +343,20 @@
     </section>
 
 </main>
-<!--
-<footer>juu.live (c)</footer>
--->
+
+<footer>
+    <nav>
+        <a class="__active">about</a>
+        <a>music marketplace</a>
+        <a>radio station</a>
+        <a>blockchain ticket sales</a>
+        <a>team</a>
+    </nav>
+</footer>
+
+<audio id="audio">
+    <source src="./src/static/juu.mp3" type="audio/mp3" />
+</audio>
 
 <!-- JavaScript includes -->
 <script src="dist/js/app.js"></script>

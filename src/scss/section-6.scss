@@ -61,7 +61,7 @@
 
   .team-img {
     margin-top: 80px;
-    max-width: 920px;
+    width: 600px;
 
     @include media-breakpoint-down(lg) {
       max-width: 320px;
