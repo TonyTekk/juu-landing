@@ -31,7 +31,7 @@
   }
 
   .section1_img-effect2 {
-    animation: flicker 5s infinite;
+    animation: flicker 5s;
   }
 }
 
@@ -48,12 +48,11 @@
 }
 
 @keyframes fadeInSlow {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% { opacity: 0;}
+  100% { opacity: 1;}
 }
 
 @keyframes flicker {
-  0% { opacity: .4; }
-  50% { opacity: 1; }
-  100% { opacity: .4; }
+  0% { opacity: .1; transform: scale(0.9);}
+  100% { opacity: 1; transform: scale(1);}
 }
