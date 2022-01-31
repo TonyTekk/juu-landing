@@ -28,6 +28,10 @@
 
   .margin-bottom {
     margin-bottom: 20px;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 60px;
+    }
   }
 
   .margin-top {

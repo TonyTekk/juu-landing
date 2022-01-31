@@ -1,10 +1,13 @@
 #section5 {
   padding-top: 120px;
+  padding-bottom: 140px;
+  overflow: hidden;
 
   @include media-breakpoint-down(lg) {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    padding-bottom: 0;
   }
 
   div {
@@ -30,7 +33,7 @@
     position: absolute;
     left: 80px;
     top: 110px;
-    animation:spin 400s linear infinite;
+    animation: spin 400s linear infinite;
 
     @include media-breakpoint-down(lg) {
       width: 1000px;

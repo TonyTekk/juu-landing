@@ -30,9 +30,27 @@
     top: 0;
     //transform: rotate(20deg);
     transform: rotate(360deg);
+    animation: turn 20s linear infinite;
 
     @include media-breakpoint-down(lg) {
       display: none;
     }
+  }
+}
+
+@keyframes turn {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(370deg);
+    transform:rotate(370deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
   }
 }
