@@ -40,7 +40,7 @@
     font-size: 13px;
   }
 
-  button {
+  .button {
     color: #FFFFFF;
     border-radius: 15px;
     border: solid 1px #FFFFFF;
@@ -57,7 +57,7 @@
     }
   }
 
-  .__button {
+  .button-container {
     display: flex;
     align-items: center;
     justify-content: center;
