@@ -1,9 +1,10 @@
-#section4 {
+.section4 {
   padding-top: 120px;
 
   @include media-breakpoint-down(lg) {
     display: flex;
     justify-content: center;
+    padding-top: 80px;
   }
 
   div {
