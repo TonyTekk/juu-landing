@@ -6,6 +6,9 @@ $(document).ready(function() {
         event.preventDefault();
         $('#btn_pause').css('display', 'block');
         $('#btn_play').css('display', 'none');
+
+        $('.tap_play').css('display', 'none');
+
         audio.play();
     });
 
@@ -14,6 +17,10 @@ $(document).ready(function() {
         $('#btn_play').css('display', 'block');
         $('#btn_pause').css('display', 'none');
         audio.pause();
+    });
+
+    $(window).scroll(function () {
+        $('.tap_play').css('display', 'none');
     });
 });
 
@@ -101,7 +108,6 @@ $(document).ready(function() {
             }
         });
     });
-
 
     function reveal() {
         var reveals = document.querySelectorAll('.__reveal');

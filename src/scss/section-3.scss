@@ -28,7 +28,7 @@
 
   .__vectors {
     position: absolute;
-    top: 10px;
+    top: 50px;
 
     @include media-breakpoint-down(lg) {
       transform: scale(0.3);
@@ -37,6 +37,7 @@
       margin-left: -140px;
       margin-top: -50px;
       height: 280px;
+      top: -20px;
     }
 
     img {
