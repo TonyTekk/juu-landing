@@ -117,3 +117,14 @@ a:hover {
 .__fadeIn {
   opacity:0;
 }
+
+.__reveal{
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.__reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}

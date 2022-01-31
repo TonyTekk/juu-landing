@@ -8,7 +8,8 @@
 
   div {
     max-width: 550px;
-    margin-left: 50%;
+    //margin-left: 50%;
+    margin-left: 80px;
     padding: 0 10px;
 
     @include media-breakpoint-down(lg) {
@@ -24,9 +25,11 @@
   img {
     width: 280px;
     position: absolute;
-    left: 150px;
-    top: 20px;
-    transform: rotate(20deg);
+    //left: 150px;
+    right: 300px;
+    top: 0;
+    //transform: rotate(20deg);
+    transform: rotate(360deg);
 
     @include media-breakpoint-down(lg) {
       display: none;

@@ -47,10 +47,12 @@
     font-size: 22px;
     text-transform: uppercase;
     padding: 20px 170px;
+    margin-top: 80px;
     white-space: nowrap;
     font-family: Condensed-Regular, serif;
 
     @include media-breakpoint-down(lg) {
+      margin-top: 40px;
       padding: 10px 80px;
     }
   }
@@ -59,16 +61,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .team-img {
-    margin-top: 80px;
-    width: 600px;
-
-    @include media-breakpoint-down(lg) {
-      max-width: 320px;
-      margin-top: 20px;
-    }
   }
 
   .logo {

@@ -1,6 +1,6 @@
 // Player
 $(document).ready(function() {
-    var audio = document.getElementById("audio");
+    var audio = document.getElementById('audio');
 
     $('#btn_play').on('click', function(event) {
         event.preventDefault();
@@ -15,25 +15,9 @@ $(document).ready(function() {
         $('#btn_pause').css('display', 'none');
         audio.pause();
     });
-
 });
 
-// Fade in effect
-$(document).ready(function() {
-    $(window).scroll( function(){
-        $('.__fadeIn').each( function(i){
-
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            if( bottom_of_window > bottom_of_element - 500){
-                $(this).animate({'opacity': '1'}, 300);
-            }
-        });
-    });
-});
-
-// Menu animation
+// Header menu animation
 $(document).ready(function () {
     var didScroll;
     var lastScrollTop = 0;
@@ -68,6 +52,7 @@ $(document).ready(function () {
     }
 });
 
+// Footer menu animation
 $(document).ready(function () {
     var didScroll;
     var lastScrollTop = 0;
@@ -100,4 +85,39 @@ $(document).ready(function () {
 
         lastScrollTop = st;
     }
+});
+
+// Effects
+$(document).ready(function() {
+
+    $(window).scroll( function(){
+        $('.__fadeIn').each( function(i){
+
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if( bottom_of_window > bottom_of_element - 300){
+                $(this).animate({'opacity': '1'}, 1000);
+            }
+        });
+    });
+
+
+    function reveal() {
+        var reveals = document.querySelectorAll('.__reveal');
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 50;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add('active');
+            } else {
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', reveal);
 });

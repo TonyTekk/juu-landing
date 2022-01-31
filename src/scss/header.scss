@@ -31,13 +31,6 @@ header {
         border-bottom: solid 3px #E0E0E0;
       }
     }
-
-/*
-    a.__active {
-      padding-top: 3px;
-      border-bottom: solid 3px #E0E0E0;
-    }
-    */
   }
 
   @include media-breakpoint-down(lg) {
